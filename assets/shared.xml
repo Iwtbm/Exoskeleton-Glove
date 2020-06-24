@@ -1,4 +1,3 @@
-<!-- See LICENSE.md for legal notices. LICENSE.md must be kept together with this file. -->
 <mujoco>
     <size njmax="500" nconmax="100" nuser_jnt="1" nuser_site="1" nuser_tendon="1" nuser_sensor="1" nuser_actuator="16" nstack="600000"></size>
 
