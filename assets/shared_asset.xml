@@ -1,26 +1,46 @@
-<!-- See LICENSE.md for legal notices. LICENSE.md must be kept together with this file. -->
 <mujoco>
     <texture type="skybox" builtin="gradient" rgb1="0.44 0.85 0.56" rgb2="0.46 0.87 0.58" width="32" height="32"></texture>
 
-    <texture name="robot0:texplane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.15 0.2" width="512" height="512"></texture>
-    <texture name="robot0:texgeom" type="cube" builtin="flat" mark="cross" width="127" height="127" rgb1="0.3 0.6 0.5" rgb2="0.3 0.6 0.5" markrgb="0 0 0" random="0.01"></texture>
+    <texture name="glove:texplane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.15 0.2" width="512" height="512"></texture>
+    <texture name="glove:texgeom" type="cube" builtin="flat" mark="cross" width="127" height="127" rgb1="0.3 0.6 0.5" rgb2="0.3 0.6 0.5" markrgb="0 0 0" random="0.01"></texture>
 
-    <material name="robot0:MatGnd" reflectance="0.5" texture="robot0:texplane" texrepeat="1 1" texuniform="true"></material>
-    <material name="robot0:MatColl" specular="1" shininess="0.3" reflectance="0.5" rgba="0.4 0.5 0.6 1"></material>
-    <material name="robot0:MatViz" specular="0.75" shininess="0.1" reflectance="0.5" rgba="0.93 0.93 0.93 1"></material>
-    <material name="robot0:object" texture="robot0:texgeom" texuniform="false"></material>
+    <material name="glove:MatGnd" reflectance="0.5" texture="glove:texplane" texrepeat="1 1" texuniform="true"></material>
+    <material name="glove:MatColl" specular="1" shininess="0.3" reflectance="0.5" rgba="0.4 0.5 0.6 1"></material>
+    <material name="glove:MatViz" specular="0.75" shininess="0.1" reflectance="0.5" rgba="0.93 0.93 0.93 1"></material>
+    <material name="glove:object" texture="glove:texgeom" texuniform="false"></material>
     <material name="floor_mat" specular="0" shininess="0.5" reflectance="0" rgba="0.2 0.2 0.2 0"></material>
-
-    <mesh name="robot0:forearm" file="forearm_electric.stl"></mesh>
-    <mesh name="robot0:forearm_cvx" file="forearm_electric_cvx.stl"></mesh>
-    <mesh name="robot0:wrist" scale="0.001 0.001 0.001" file="wrist.stl"></mesh>
-    <mesh name="robot0:palm" scale="0.001 0.001 0.001" file="palm.stl"></mesh>
-    <mesh name="robot0:knuckle" scale="0.001 0.001 0.001" file="knuckle.stl"></mesh>
-    <mesh name="robot0:F3" scale="0.001 0.001 0.001" file="F3.stl"></mesh>
-    <mesh name="robot0:F2" scale="0.001 0.001 0.001" file="F2.stl"></mesh>
-    <mesh name="robot0:F1" scale="0.001 0.001 0.001" file="F1.stl"></mesh>
-    <mesh name="robot0:lfmetacarpal" scale="0.001 0.001 0.001" file="lfmetacarpal.stl"></mesh>
-    <mesh name="robot0:TH3_z" scale="0.001 0.001 0.001" file="TH3_z.stl"></mesh>
-    <mesh name="robot0:TH2_z" scale="0.001 0.001 0.001" file="TH2_z.stl"></mesh>
-    <mesh name="robot0:TH1_z" scale="0.001 0.001 0.001" file="TH1_z.stl"></mesh>
+    <!-- wrist -->
+    <mesh name="glove:wrist_base" file="./wrist/wrist_base.STL"></mesh>
+    <mesh name="glove:SEA_output_shaft_wrist" file="./wrist/SEA_output_shaft_wrist.STL"></mesh>
+    <mesh name="glove:connect" file="./wrist/connect.STL"></mesh><!--scale="0.001 0.001 0.001"-->
+    <!-- palm -->
+    <mesh name="glove:palm" file="./palm/palm.STL"></mesh>
+    <!-- index -->
+    <mesh name="glove:SEA_output_shaft_index" file="./index/SEA_output_shaft_index.STL"></mesh>
+    <mesh name="glove:index_proximal_1" file="./index/index_proximal_1.STL"></mesh>
+    <mesh name="glove:index_middle_1" file="./index/index_middle_1.STL"></mesh>
+    <mesh name="glove:index_distal" file="./index/index_distal.STL"></mesh>
+    <mesh name="glove:index_proximal_2" file="./index/index_proximal_2.STL"></mesh>
+    <mesh name="glove:index_middle_2" file="./index/index_middle_2.STL"></mesh>
+    <!-- middle -->
+    <mesh name="glove:SEA_output_shaft_middle" file="./middle/SEA_output_shaft_middle.STL"></mesh>
+    <mesh name="glove:middle_proximal_1" file="./middle/middle_proximal_1.STL"></mesh>
+    <mesh name="glove:middle_middle_1" file="./middle/middle_middle_1.STL"></mesh>
+    <mesh name="glove:middle_distal" file="./middle/middle_distal.STL"></mesh>
+    <mesh name="glove:middle_proximal_2" file="./middle/middle_proximal_2.STL"></mesh>
+    <mesh name="glove:middle_middle_2" file="./middle/middle_middle_2.STL"></mesh>
+    <!-- ring -->
+    <mesh name="glove:SEA_output_shaft_ring"  file="./ring/SEA_output_shaft_ring.STL"></mesh>
+    <mesh name="glove:ring_proximal_1" file="./ring/ring_proximal_1.STL"></mesh>
+    <mesh name="glove:ring_middle_1" file="./ring/ring_middle_1.STL"></mesh>
+    <mesh name="glove:ring_distal" file="./ring/ring_distal.STL"></mesh>
+    <mesh name="glove:ring_proximal_2" file="./ring/ring_proximal_2.STL"></mesh>
+    <mesh name="glove:ring_middle_2" file="./ring/ring_middle_2.STL"></mesh>
+    <!-- little -->
+    <mesh name="glove:SEA_output_shaft_little"  file="./little/SEA_output_shaft_little.STL"></mesh>
+    <mesh name="glove:little_proximal_1" file="./little/little_proximal_1.STL"></mesh>
+    <mesh name="glove:little_middle_1" file="./little/little_middle_1.STL"></mesh>
+    <mesh name="glove:little_distal" file="./little/little_distal.STL"></mesh>
+    <mesh name="glove:little_proximal_2" file="./little/little_proximal_2.STL"></mesh>
+    <mesh name="glove:little_middle_2" file="./little/little_middle_2.STL"></mesh>
 </mujoco>
