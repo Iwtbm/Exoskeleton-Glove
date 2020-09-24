@@ -272,7 +272,7 @@ class ManipulateEnv(hand_env.HandEnv):
         }
 
 
-class HandBlockEnv(ManipulateEnv, utils.EzPickle):
+class GloveBlockEnv(ManipulateEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, reward_type)
         ManipulateEnv.__init__(self,
@@ -282,7 +282,7 @@ class HandBlockEnv(ManipulateEnv, utils.EzPickle):
             reward_type=reward_type)
 
 
-class HandEggEnv(ManipulateEnv, utils.EzPickle):
+class GloveEggEnv(ManipulateEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, reward_type)
         ManipulateEnv.__init__(self,
@@ -292,7 +292,7 @@ class HandEggEnv(ManipulateEnv, utils.EzPickle):
             reward_type=reward_type)
 
 
-class HandPenEnv(ManipulateEnv, utils.EzPickle):
+class GlovePenEnv(ManipulateEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, reward_type)
         ManipulateEnv.__init__(self,
