@@ -20,9 +20,9 @@ def quat_from_angle_and_axis(angle, axis):
 
 
 # Ensure we get the path separator correct on windows
-MANIPULATE_BLOCK_XML = os.path.join('hand', 'manipulate_block.xml')
-MANIPULATE_EGG_XML = os.path.join('hand', 'manipulate_egg.xml')
-MANIPULATE_PEN_XML = os.path.join('hand', 'manipulate_pen.xml')
+MANIPULATE_BLOCK_XML = os.path.join('glove', 'manipulate_block.xml')
+MANIPULATE_EGG_XML = os.path.join('glove', 'manipulate_egg.xml')
+MANIPULATE_PEN_XML = os.path.join('glove', 'manipulate_pen.xml')
 
 
 class ManipulateEnv(hand_env.HandEnv):
