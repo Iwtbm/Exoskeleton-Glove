@@ -1,5 +1,5 @@
 <mujoco>
-    <body childclass="glove:asset_class" name="glove:wrist_base" pos="0 0 0">
+    <body childclass="glove:asset_class" name="glove:wrist_base" pos="1 1.25 0.15" euler="1.570796 0 0">
         <inertial pos="-0.0006546 -0.0275814 -0.0886159" xyaxes="0.0595825 -0.0224815 0.9979702 0.9980937 0.017458 -0.0591966" mass="528.4337494" diaginertia="0.6928335 0.9735148 1.3551796"></inertial>
         <geom class="glove:Hand" name="glove:C_wrist_base" type="mesh" mesh="glove:wrist_base"></geom>
         <geom class="glove:Visual" name="glove:V_wrist_base" mesh="glove:wrist_base"></geom>
