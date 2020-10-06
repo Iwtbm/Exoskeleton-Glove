@@ -1,5 +1,5 @@
 <mujoco>
-    <body childclass="glove:asset_class" name="glove:wrist_base" pos="1 1.25 0.15" euler="1.570796 0 0">
+    <body childclass="glove:asset_class" name="glove:wrist_base" pos="1 1.25 0.50" euler="1.570796 0 0">
         <inertial pos="-0.0006546 -0.0275814 -0.0886159" xyaxes="0.0595825 -0.0224815 0.9979702 0.9980937 0.017458 -0.0591966" mass="528.4337494" diaginertia="0.6928335 0.9735148 1.3551796"></inertial>
         <geom class="glove:Hand" name="glove:C_wrist_base" type="mesh" mesh="glove:wrist_base"></geom>
         <geom class="glove:Visual" name="glove:V_wrist_base" mesh="glove:wrist_base"></geom>
@@ -12,13 +12,13 @@
 
             <body name="glove:connect" pos="0 -0.00088 0.06148" euler="0 -1.570796 -0.422719">
                 <inertial pos="0.013879 0 0.000626" xyaxes="0.9926225 0 -0.1212456 0 -1 0" mass="2.9544633" diaginertia="0.0000224 0.0002468 0.0002569"></inertial>
-                <joint name="glove:connect_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                <joint name="glove:connect_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.46 0" user="1103"></joint>
                 <geom class="glove:Visual" name="glove:V_connect" mesh="glove:connect"></geom>
                 <geom class="glove:Hand" name="glove:C_connect" type="capsule" fromto="0 0 0 0.028 0 0" size="0.00333"></geom>
 
                 <body name="glove:palm" pos="0.028 0 -0.0007" euler="0 0 0.422719">
                     <inertial pos="0.047823 -0.004832 0.007715" xyaxes="0.026274 -0.026111 -0.999314 0.997282 -0.068153 0.028002" mass="147.045319" diaginertia="0.108345 0.162067 0.24691"></inertial>
-                    <joint name="glove:palm_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                    <joint name="glove:palm_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.07 0" user="1103"></joint>
                     <geom class="glove:Visual" name="glove:V_palm" mesh="glove:palm"></geom>
                     <geom class="glove:Hand" name="glove:C_palm" type="box" pos="0.048255 -0.019 0.00739" size="0.038137 0.013 0.05"></geom>
                     <!-- index finger
@@ -29,24 +29,24 @@
                         <geom class="glove:Visual" name="glove:V_SEA_output_shaft_index" mesh="glove:SEA_output_shaft_index"></geom>
                         <geom class="glove:Hand" name="glove:C_SEA_output_shaft_index" type="mesh" mesh="glove:SEA_output_shaft_index" pos="0 0 0"></geom>
                         <body name="glove:index_connect" pos="0.01135 -0.0047 0.04679">
-                            <joint name="glove:index_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:index_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="0 0.626224136" user="1103"></joint>
                             <!-- <geom class="glove:Visual" name="glove:V_index_proximal_1" mesh="glove:index_proximal_1"></geom> -->
                             <geom class="glove:Hand" name="glove:C_index_connect" type="cylinder" fromto="-0.00435 0 0 0.00435 0 0" size="0.002"></geom>
                             <body name="glove:index_proximal_1" pos="0.00193 -0.023225 -0.00984" euler="0 -1.5707963 -0.0780162">
                                 <inertial pos="0.008629 0.005688 0.001628" xyaxes="0.963995 -0.265119 0.020633 0.264836 0.96417 0.015453" mass="2.4078" diaginertia="0.000239 0.000386 0.000623"></inertial>
-                                <joint name="glove:index_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="0 0.012" user="1103"></joint>
+                                <joint name="glove:index_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="-0.012 0" user="1103"></joint>
                                 <geom class="glove:Visual" name="glove:V_index_proximal_1" mesh="glove:index_proximal_1"></geom>
                                 <geom class="glove:Hand" name="glove:C_index_proximal_1" type="mesh" mesh="glove:index_proximal_1" pos="0 0 0"></geom>
 
                                 <body name="glove:index_middle_1" pos="0.044224 -0.006829 0.00176" euler="0 0 0.388161219">
                                     <inertial pos="0.010585 0 -0.00041" xyaxes="1 0 0 0 -1 0" mass="0.312754" diaginertia="0.000001 0.00002 0.000021"></inertial>
-                                    <joint name="glove:index_middle_1_hinge" type="hinge" pos="0 0 -0.00041" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                    <joint name="glove:index_middle_1_hinge" type="hinge" pos="0 0 -0.00041" axis="0 0 1" range="-1.3208652 0" user="1103"></joint>
                                     <geom class="glove:Visual" name="glove:V_index_middle_1" mesh="glove:index_middle_1"></geom>
                                     <geom class="glove:Hand" name="glove:C_index_middle_1" type="box" pos="0.010585 0 -0.00041" size="0.010585 0.0035 0.00041"></geom>
 
                                     <body name="glove:index_distal" pos="0.02117 0 0" euler="0 0 -0.86446156">
                                         <inertial pos="0.0161292 -0.0046484 0.00041" xyaxes="0.9938448 -0.1107818 0 0.1107818 0.9938448 0" mass="0.502947" diaginertia="0.000003 0.000072 0.000075"></inertial>
-                                        <joint name="glove:index_distal_hinge" type="hinge" pos="0 0 0.00041" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                        <joint name="glove:index_distal_hinge" type="hinge" pos="0 0 0.00041" axis="0 0 1" range="-0.34  0" user="1103"></joint>
                                         <geom class="glove:Visual" name="glove:V_index_distal" mesh="glove:index_distal"></geom>
                                         <geom class="glove:Hand" name="glove:C_index_distal" type="mesh" mesh="glove:index_distal" pos="0 0 0"></geom>
                                         <site class="glove:Touch" name="glove:Tch_Iftip" pos="0.0256 -0.0056 0.008"></site>
@@ -58,13 +58,13 @@
                     <!-- index 2 -->
                     <body name="glove:index_proximal_2" pos="0.086915 -0.035477 -0.041174" euler="0 0 0.343306258">
                         <inertial pos="0.015995 0.0007013 0.00041" xyaxes="1 0 0 0 -1 0" mass="0.437909" diaginertia="0.000001 0.000055 0.000056"></inertial>
-                        <joint name="glove:index_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                        <joint name="glove:index_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.6393141 0" user="1103"></joint>
                         <geom class="glove:Visual" name="glove:V_index_proximal_2" mesh="glove:index_proximal_2"></geom>
                         <geom class="glove:Hand" name="glove:C_index_proximal_2" type="box" pos="0.016 0 0.00041" size="0.016 0.0035 0.00041"></geom>
 
                         <body name="glove:index_middle_2" pos="0.03199 0 -0.00082" euler="0 0 -0.659908979">
                             <inertial pos="0.0168828 -0.0009065 0.0002659" xyaxes="0.9998547 -0.01685 -0.0025635 0.0168628 0.999845 0.0050694" mass="0.546186" diaginertia="0.000002 0.000078 0.000079"></inertial>
-                            <joint name="glove:index_middle_2_hinge" type="hinge" pos="0 0 0.00041" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:index_middle_2_hinge" type="hinge" pos="0 0 0.00041" axis="0 0 1" range="-1 0" user="1103"></joint>
                             <geom class="glove:Visual" name="glove:V_index_middle_2" mesh="glove:index_middle_2"></geom>
                             <geom class="glove:Hand" name="glove:C_index_middle_2" type="box" pos="0.0164625 0 0.00041" size="0.0164625 0.0035 0.00041"></geom>
                         </body>
@@ -79,25 +79,25 @@
                         <geom class="glove:Hand" name="glove:C_SEA_output_shaft_middle" type="mesh" mesh="glove:SEA_output_shaft_middle" pos="0 0 0"></geom>
 
                         <body name="glove:middle_connect" pos="0.0106 0 0.07098">
-                            <joint name="glove:middle_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:middle_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="0 0.542" user="1103"></joint>
                             <!-- <geom class="glove:Visual" name="glove:V_index_proximal_1" mesh="glove:index_proximal_1"></geom> -->
                             <geom class="glove:Hand" name="glove:C_middle_connect" type="cylinder" fromto="-0.009 0 0 0.009 0 0" size="0.001"></geom>
                             
                             <body name="glove:middle_proximal_1" pos="-0.0008 -0.029125 -0.00232" euler="0 -1.5707963 -0.0794125">
                                 <inertial pos="0.002633 0.0085329 -0.000994" xyaxes="-0.2512341 0.9679056 0.0063425 -0.9673889 -0.250871 -0.034950" mass="2.370551" diaginertia="0.000114 0.000395 0.000508"></inertial>
-                                <joint name="glove:middle_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="0 0.019" user="1103"></joint>
+                                <joint name="glove:middle_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="-0.008 0" user="1103"></joint>
                                 <geom class="glove:Visual" name="glove:V_middle_proximal_1" mesh="glove:middle_proximal_1"></geom>
                                 <geom class="glove:Hand" name="glove:C_middle_proximal_1" type="mesh" mesh="glove:middle_proximal_1" pos="0 0 0"></geom>
 
                                 <body name="glove:middle_middle_1" pos="0.027363 -0.00579 -0.00082" euler="0 0 0.47263515">
                                     <inertial pos="0.009425 0 -0.00041" xyaxes="-1 0 0 0 1 0" mass="0.287071" diaginertia="0.000001 0.000016 0.000016"></inertial>
-                                    <joint name="glove:middle_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                    <joint name="glove:middle_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.73 0" user="1103"></joint>
                                     <geom class="glove:Visual" name="glove:V_middle_middle_1" mesh="glove:middle_middle_1"></geom>
                                     <geom class="glove:Hand" name="glove:C_middle_middle_1" type="box" pos="0.009425 0 -0.00041" size="0.009425 0.0035 0.00041"></geom>
 
                                     <body name="glove:middle_distal" pos="0.01885 0 0" euler="0 0 -0.79936">
                                         <inertial pos="0.0161292 -0.004648 0.00041" xyaxes="0.9938448 -0.1107828 0 0.1107818 0.9938445 0" mass="0.483259" diaginertia="0.000003 0.000069 0.000072"></inertial>
-                                        <joint name="glove:middle_distal_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                        <joint name="glove:middle_distal_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="0 0.166" user="1103"></joint>
                                         <geom class="glove:Visual" name="glove:V_middle_distal" mesh="glove:middle_distal"></geom>
                                         <geom class="glove:Hand" name="glove:C_middle_distal" type="mesh" mesh="glove:middle_distal" pos="0 0 0"></geom>
                                         <site class="glove:Touch" name="glove:Tch_Mftip" pos="0.0256 -0.0056 0.008"></site>
@@ -110,13 +110,13 @@
                     <!-- middle 2 -->
                     <body name="glove:middle_proximal_2" pos="0.124204 -0.032173 -0.010736" euler="0 0 1.018749">
                         <inertial pos="0.00742 0.00059 0.00041" xyaxes="-1 0 0 0 -1 0" mass="0.229772" diaginertia="0.000001 0.000009 0.00001"></inertial>
-                        <joint name="glove:middle_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                        <joint name="glove:middle_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.31 0" user="1103"></joint>
                         <geom class="glove:Visual" name="glove:V_middle_proximal_2" mesh="glove:middle_proximal_2"></geom>
                         <geom class="glove:Hand" name="glove:C_middle_proximal_2" type="box" pos="0.00742 0 0.00041" size="0.01 0.0035 0.00041"></geom>
 
                         <body name="glove:middle_middle_2" pos="0.014863 0 -0.00082" euler="0 0 -1.2534955">
                             <inertial pos="0.014988 -0.0059671 0.000275" xyaxes="0.99403 -0.109079 -0.002612 0.109106 0.993923 0.014571" mass="0.576615" diaginertia="0.000004 0.000083 0.000087"></inertial>
-                            <joint name="glove:middle_middle_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:middle_middle_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.432 0" user="1103"></joint>
                             <geom class="glove:Visual" name="glove:V_middle_middle_2" mesh="glove:middle_middle_2"></geom>
                             <geom class="glove:Hand" name="glove:C_middle_middle_2" type="mesh" mesh="glove:middle_middle_2" pos="0 0 0"></geom>
                         </body>
@@ -131,25 +131,25 @@
                         <geom class="glove:Hand" name="glove:C_SEA_output_shaft_ring" type="mesh" mesh="glove:SEA_output_shaft_ring" pos="0 0 0"></geom>
 
                         <body name="glove:ring_connect" pos="-0.01155 -0.0047 0.06779">
-                            <joint name="glove:ring_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:ring_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="0 0.635" user="1103"></joint>
                             <!-- <geom class="glove:Visual" name="glove:V_index_proximal_1" mesh="glove:index_proximal_1"></geom> -->
                             <geom class="glove:Hand" name="glove:C_ring_connect" type="cylinder" fromto="-0.0045 0 0 0.0045 0 0" size="0.002"></geom>
                         
                             <body name="glove:ring_proximal_1" pos="0.00045 -0.024229 -0.00099" euler="0 -1.5707963 -0.0408407">
                                 <inertial pos="0.002609 0.005714 0.001025" xyaxes="-0.358013 0.933709 -0.00368 -0.933063 -0.357612 0.038827" mass="2.073693" diaginertia="0.000092 0.00023 0.00032"></inertial>
-                                <joint name="glove:ring_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="0 0.009" user="1103"></joint>
+                                <joint name="glove:ring_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="-0.00065 0" user="1103"></joint>
                                 <geom class="glove:Visual" name="glove:V_ring_proximal_1" mesh="glove:ring_proximal_1"></geom>
                                 <geom class="glove:Hand" name="glove:C_ring_proximal_1" type="mesh" mesh="glove:ring_proximal_1" pos="0 0 0"></geom>
 
                                 <body name="glove:ring_middle_1" pos="0.025164 -0.006377 0.00082" euler="0 0 0.648215">
                                     <inertial pos="0.00804 0 0.00041" xyaxes="1 0 0 0 1 0" mass="0.256407" diaginertia="0.000001 0.000011 0.000012"></inertial>
-                                    <joint name="glove:ring_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                    <joint name="glove:ring_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.85 0" user="1103"></joint>
                                     <geom class="glove:Visual" name="glove:V_ring_middle_1" mesh="glove:ring_middle_1"></geom>
                                     <geom class="glove:Hand" name="glove:C_ring_middle_1" type="box" pos="0.00805 0 0.00041" size="0.00805 0.0035 0.00041"></geom>
 
                                     <body name="glove:ring_distal" pos="0.0161 0 -0.00082" euler="0 0 -0.820305">
                                         <inertial pos="0.0111021 -0.0033985 0.00041" xyaxes="0.9914145 -0.1307563 0 0.1307563 0.9914145 0" mass="0.374315" diaginertia="0.000002 0.000029 0.000031"></inertial>
-                                        <joint name="glove:ring_distal_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                        <joint name="glove:ring_distal_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.12 0" user="1103"></joint>
                                         <geom class="glove:Visual" name="glove:V_ring_distal" mesh="glove:ring_distal"></geom>
                                         <geom class="glove:Hand" name="glove:C_ring_distal" type="mesh" mesh="glove:ring_distal" pos="0 0 0"></geom>
                                         <site class="glove:Touch" name="glove:Tch_Rftip" pos="0.02426 -0.00426 -0.008"></site>
@@ -162,13 +162,13 @@
                     <!-- ring 2 -->
                     <body name="glove:ring_proximal_2" pos="0.120953 -0.031551 0.033104" euler="0 0 1.20829142">
                         <inertial pos="0.006525 0.0004838 0.00041" xyaxes="-1 0 0 0 1 0" mass="0.220804" diaginertia="0.000001 0.000007 0.000008"></inertial>
-                        <joint name="glove:ring_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                        <joint name="glove:ring_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.38 0" user="1103"></joint>
                         <geom class="glove:Visual" name="glove:V_ring_proximal_2" mesh="glove:ring_proximal_2"></geom>
                         <geom class="glove:Hand" name="glove:C_ring_proximal_2" type="box" pos="0.006538 0 0.00041" size="0.006538 0.0035 0.00041"></geom>
 
                         <body name="glove:ring_middle_2" pos="0.01305 0 0.00082" euler="0 0 -1.3137">
                             <inertial pos="0.0141016 -0.0052297 0.0005693" xyaxes="0.9916009 -0.1292814 0.0037502 0.1293319 0.9913782 -0.0210348" mass="0.494241" diaginertia="0.000003 0.000061 0.000064"></inertial>
-                            <joint name="glove:ring_middle_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:ring_middle_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.45 0" user="1103"></joint>
                             <geom class="glove:Visual" name="glove:V_ring_middle_2" mesh="glove:ring_middle_2"></geom>
                             <geom class="glove:Hand" name="glove:C_ring_middle_2" type="mesh" mesh="glove:ring_middle_2" pos="0 0 0"></geom>
                         </body>
@@ -183,25 +183,25 @@
                         <geom class="glove:Hand" name="glove:C_SEA_output_shaft_little" type="mesh" mesh="glove:SEA_output_shaft_little" pos="0 0 0"></geom>
 
                         <body name="glove:little_connect" pos="-0.01305 -0.0047 0.04399">
-                            <joint name="glove:little_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:little_connect_hinge" type="hinge" pos="0 0 0" axis="1 0 0" range="0 0.316" user="1103"></joint>
                             <!-- <geom class="glove:Visual" name="glove:V_index_proximal_1" mesh="glove:index_proximal_1"></geom> -->
                             <geom class="glove:Hand" name="glove:C_little_connect" type="cylinder" fromto="-0.0045 0 0 0.0045 0 0" size="0.002"></geom>
 
                             <body name="glove:little_proximal_1" pos="0.00095 -0.02423 -0.01109" euler="0 -1.5707963 -0.202109">
                                 <inertial pos="0.0064485 0.005612 0.0009768" xyaxes="0.8653759 -0.5007728 -0.0187386 0.5003301 0.865505 -0.0238941" mass="2.228222" diaginertia="0.000193 0.000254 0.000445"></inertial>
-                                <joint name="glove:little_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="0 0.0151" user="1103"></joint>
+                                <joint name="glove:little_proximal_1_slide" type="slide" pos="0 0 0" axis="0 1 0" range="-0.00492 0" user="1103"></joint>
                                 <geom class="glove:Visual" name="glove:V_little_proximal_1" mesh="glove:little_proximal_1"></geom>
                                 <geom class="glove:Hand" name="glove:C_little_proximal_1" type="mesh" mesh="glove:little_proximal_1" pos="0 0 0"></geom>
 
                                 <body name="glove:little_middle_1" pos="0.037528 -0.005475 0.00082" euler="0 0 0.6265732">
                                     <inertial pos="0.006555 0 0.00041" xyaxes="1 0 0 0 1 0" mass="0.223529" diaginertia="0.000001 0.000007 0.000008"></inertial>
-                                    <joint name="glove:little_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                    <joint name="glove:little_middle_1_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.1 0" user="1103"></joint>
                                     <geom class="glove:Visual" name="glove:V_little_middle_1" mesh="glove:little_middle_1"></geom>
                                     <geom class="glove:Hand" name="glove:C_little_middle_1" type="box" pos="0.006555 0 0.00041" size="0.006555 0.0035 0.00041"></geom>
 
                                     <body name="glove:little_distal" pos="0.013136 0 -0.00082" euler="0 0 -1.30515721">
                                         <inertial pos="0.0124181 -0.0045993 0.00041" xyaxes="0.9855276 -0.169515 0 0.169515 0.9855276 0" mass="0.399541" diaginertia="0.000002 0.000038 0.00004"></inertial>
-                                        <joint name="glove:little_distal_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                                        <joint name="glove:little_distal_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.08 0" user="1103"></joint>
                                         <geom class="glove:Visual" name="glove:V_little_distal" mesh="glove:little_distal"></geom>
                                         <geom class="glove:Hand" name="glove:C_little_distal" type="mesh" mesh="glove:little_distal" pos="0 0 0"></geom>
                                         <site class="glove:Touch" name="glove:Tch_Lftip" pos="0.02584 -0.00584 -0.008"></site>
@@ -214,13 +214,13 @@
                     <!-- little 2 -->
                     <body name="glove:little_proximal_2" pos="0.086467 -0.035672 0.057964" euler="0 0 0.392">
                         <inertial pos="0.01504 0.0010161 -0.00041" xyaxes="-1 0 0 0 1 0" mass="0.339161" diaginertia="0.0000011 0.000044 0.000045"></inertial>
-                        <joint name="glove:little_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                        <joint name="glove:little_proximal_2_hinge" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.45 0" user="1103"></joint>
                         <geom class="glove:Visual" name="glove:V_little_proximal_2" mesh="glove:little_proximal_2"></geom>
                         <geom class="glove:Hand" name="glove:C_little_proximal_2" type="box" pos="0.01504 0 -0.00041" size="0.01504 0.0035 0.00041"></geom>
 
                         <body name="glove:little_middle_2" pos="0.03008 0 0" euler="0 0 -0.915425">
                             <inertial pos="0.0097546 -0.0059841 0.0005756" xyaxes="0.9842724 -0.176582 0.0051581 0.1766476 0.9841053 -0.018234" mass="0.475566" diaginertia="0.000004 0.000036 0.00004"></inertial>
-                            <joint name="glove:little_middle_2" type="hinge" pos="0 0 0" axis="0 0 1" range="-3.1415926 3.1415926" user="1103"></joint>
+                            <joint name="glove:little_middle_2" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.49 0" user="1103"></joint>
                             <geom class="glove:Visual" name="glove:V_little_middle_2" mesh="glove:little_middle_2"></geom>
                             <geom class="glove:Hand" name="glove:C_little_middle_2" type="mesh" mesh="glove:little_middle_2" pos="0 0 0"></geom>
                         </body>

@@ -94,7 +94,7 @@ class ManipulateTouchSensorsEnv(manipulate.ManipulateEnv):
         }
 
 
-class HandBlockTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
+class GloveBlockTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', touch_get_obs='sensordata', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, touch_get_obs, reward_type)
         ManipulateTouchSensorsEnv.__init__(self,
@@ -106,7 +106,7 @@ class HandBlockTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
             reward_type=reward_type)
 
 
-class HandEggTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
+class GloveEggTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', touch_get_obs='sensordata', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, touch_get_obs, reward_type)
         ManipulateTouchSensorsEnv.__init__(self,
@@ -118,7 +118,7 @@ class HandEggTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
             reward_type=reward_type)
 
 
-class HandPenTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
+class GlovePenTouchSensorsEnv(ManipulateTouchSensorsEnv, utils.EzPickle):
     def __init__(self, target_position='random', target_rotation='xyz', touch_get_obs='sensordata', reward_type='sparse'):
         utils.EzPickle.__init__(self, target_position, target_rotation, touch_get_obs, reward_type)
         ManipulateTouchSensorsEnv.__init__(self,

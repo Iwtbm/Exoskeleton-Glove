@@ -1,0 +1,213 @@
+output_shaft
+Mass properties of output_shaft
+     Configuration: Default
+     Coordinate system: Coordinate System1
+
+Mass = 0.007847 kilograms
+
+Volume = 0.000004 cubic meters
+
+Surface area = 0.008394 square meters
+
+Center of mass: ( meters )
+	X = 0.007501
+	Y = -0.000075
+	Z = 0.014397
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.142699, -0.987598,  0.065470)   	Px = 0.000000
+	 Iy = ( 0.915312,  0.156845,  0.370950)   	Py = 0.000002
+	 Iz = (-0.376618,  0.006992,  0.926342)   	Pz = 0.000002
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.000002	Lxy = 0.000000	Lxz = 0.000000
+	Lyx = 0.000000	Lyy = 0.000000	Lyz = 0.000000
+	Lzx = 0.000000	Lzy = 0.000000	Lzz = 0.000002
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.000004	Ixy = 0.000000	Ixz = 0.000001
+	Iyx = 0.000000	Iyy = 0.000002	Iyz = 0.000000
+	Izx = 0.000001	Izy = 0.000000	Izz = 0.000003
+
+index_proximal_1
+Mass properties of index_proximal_1
+     Configuration: Default
+     Coordinate system: Coordinate System4
+
+Density = 2810.000061 kilograms per cubic meter
+
+Mass = 0.002506 kilograms
+
+Volume = 0.000001 cubic meters
+
+Surface area = 0.001525 square meters
+
+Center of mass: ( meters )
+	X = 0.008629
+	Y = 0.005688
+	Z = 0.001628
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.963995, -0.265119,  0.020633)   	Px = 0.000000
+	 Iy = ( 0.264836,  0.964170,  0.015453)   	Py = 0.000000
+	 Iz = (-0.023990, -0.009432,  0.999668)   	Pz = 0.000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.000000	Lxy = 0.000000	Lxz = 0.000000
+	Lyx = 0.000000	Lyy = 0.000000	Lyz = 0.000000
+	Lzx = 0.000000	Lzy = 0.000000	Lzz = 0.000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.000000	Ixy = 0.000000	Ixz = 0.000000
+	Iyx = 0.000000	Iyy = 0.000001	Iyz = 0.000000
+	Izx = 0.000000	Izy = 0.000000	Izz = 0.000001
+
+index_proximal_2
+Mass properties of index_proximal_2
+     Configuration: Default
+     Coordinate system: Coordinate System3
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0004558 kilograms
+
+Volume = 0.0000002 cubic meters
+
+Surface area = 0.0004801 square meters
+
+Center of mass: ( meters )
+	X = 0.0159950
+	Y = 0.0007013
+	Z = 0.0004100
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 1.0000000,  0.0000000,  0.0000000)   	Px = 0.0000000
+	 Iy = ( 0.0000000, -1.0000000,  0.0000000)   	Py = 0.0000001
+	 Iz = ( 0.0000000,  0.0000000, -1.0000000)   	Pz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000001	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000002	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000002
+
+index_medial_2
+Mass properties of index_medial_2
+     Configuration: Default
+     Coordinate system: Coordinate System3
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0005684 kilograms
+
+Volume = 0.0000002 cubic meters
+
+Surface area = 0.0005394 square meters
+
+Center of mass: ( meters )
+	X = 0.0168828
+	Y = -0.0009065
+	Z = 0.0002659
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.9998547, -0.0168500, -0.0025635)   	Px = 0.0000000
+	 Iy = ( 0.0168628,  0.9998450,  0.0050694)   	Py = 0.0000001
+	 Iz = ( 0.0024777, -0.0051119,  0.9999839)   	Pz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000001	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000002	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000002
+
+index_medial_1
+Mass properties of index_medial_1
+     Configuration: Default
+     Coordinate system: -- default --
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0003255 kilograms
+
+Volume = 0.0000001 cubic meters
+
+Surface area = 0.0003490 square meters
+
+Center of mass: ( meters )
+	X = 0.0322300
+	Y = 0.0000000
+	Z = 0.0105850
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.0000000,  0.0000000,  1.0000000)   	Px = 0.0000000
+	 Iy = ( 0.0000000, -1.0000000,  0.0000000)   	Py = 0.0000000
+	 Iz = ( 1.0000000,  0.0000000,  0.0000000)   	Pz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000000	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000001	Ixy = 0.0000000	Ixz = 0.0000001
+	Iyx = 0.0000000	Iyy = 0.0000004	Iyz = 0.0000000
+	Izx = 0.0000001	Izy = 0.0000000	Izz = 0.0000003
+
+index_distal
+Mass properties of index_distal
+     Configuration: Default
+     Coordinate system: Coordinate System3
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0005029 kilograms
+
+Volume = 0.0000002 cubic meters
+
+Surface area = 0.0005310 square meters
+
+Center of mass: ( meters )
+	X = 0.0161292
+	Y = -0.0046484
+	Z = 0.0004100
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.9938448, -0.1107818,  0.0000000)   	Px = 0.0000000
+	 Iy = ( 0.1107818,  0.9938448,  0.0000000)   	Py = 0.0000001
+	 Iz = ( 0.0000000,  0.0000000,  1.0000000)   	Pz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000001	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000002	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000002

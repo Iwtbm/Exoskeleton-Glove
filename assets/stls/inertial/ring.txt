@@ -1,0 +1,213 @@
+output——shaft
+Mass properties of SP_new_mechanism_ring
+     Configuration: Default
+     Coordinate system: Coordinate System4
+
+Mass = 0.0090313 kilograms
+
+Volume = 0.0000054 cubic meters
+
+Surface area = 0.0086571 square meters
+
+Center of mass: ( meters )
+	X = -0.0016641
+	Y = -0.0009519
+	Z = 0.0375553
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.0869125,  0.0416365, -0.9953455)   	Px = 0.0000003
+	 Iy = (-0.9251930, -0.3671162, -0.0961438)   	Py = 0.0000056
+	 Iz = (-0.3694106,  0.9292428,  0.0066149)   	Pz = 0.0000057
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000056	Lxy = 0.0000001	Lxz = -0.0000005
+	Lyx = 0.0000001	Lyy = 0.0000057	Lyz = -0.0000002
+	Lzx = -0.0000005	Lzy = -0.0000002	Lzz = 0.0000004
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000183	Ixy = 0.0000001	Ixz = -0.0000010
+	Iyx = 0.0000001	Iyy = 0.0000184	Iyz = -0.0000005
+	Izx = -0.0000010	Izy = -0.0000005	Izz = 0.0000004
+
+ring_proximal_1
+Mass properties of ring_proximal_1
+     Configuration: Default
+     Coordinate system: Coordinate System3
+
+Density = 2700.0000000 kilograms per cubic meter
+
+Mass = 0.0020737 kilograms
+
+Volume = 0.0000008 cubic meters
+
+Surface area = 0.0012121 square meters
+
+Center of mass: ( meters )
+	X = 0.0026087
+	Y = 0.0057139
+	Z = 0.0010248
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = (-0.3580127,  0.9337095, -0.0036800)   	Px = 0.0000001
+	 Iy = (-0.9330629, -0.3576117,  0.0388273)   	Py = 0.0000002
+	 Iz = ( 0.0349374,  0.0173343,  0.9992392)   	Pz = 0.0000003
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000002	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000001	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000003
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000003	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000001	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000004
+
+ring_proximal_2
+Mass properties of ring_proximal_2
+     Configuration: Default
+     Coordinate system: Coordinate System2
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0002298 kilograms
+
+Volume = 0.0000001 cubic meters
+
+Surface area = 0.0002536 square meters
+
+Center of mass: ( meters )
+	X = 0.0065250
+	Y = 0.0004838
+	Z = 0.0004100
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = (-1.0000000,  0.0000000,  0.0000000)   	Px = 0.0000000
+	 Iy = ( 0.0000000,  1.0000000,  0.0000000)   	Py = 0.0000000
+	 Iz = ( 0.0000000,  0.0000000, -1.0000000)   	Pz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000000	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000000	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000000
+
+ring_middle_2
+Mass properties of ring_middle_2
+     Configuration: Default
+     Coordinate system: Coordinate System2
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0005144 kilograms
+
+Volume = 0.0000002 cubic meters
+
+Surface area = 0.0004907 square meters
+
+Center of mass: ( meters )
+	X = 0.0141016
+	Y = -0.0052297
+	Z = 0.0005693
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.9916009, -0.1292814,  0.0037502)   	Px = 0.0000000
+	 Iy = ( 0.1293319,  0.9913782, -0.0210348)   	Py = 0.0000001
+	 Iz = (-0.0009984,  0.0213432,  0.9997717)   	Pz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000001	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000001
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000002	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000002
+
+ring_middle_1
+Mass properties of ring_middle_1
+     Configuration: Default
+     Coordinate system: Coordinate System2
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0002669 kilograms
+
+Volume = 0.0000001 cubic meters
+
+Surface area = 0.0002898 square meters
+
+Center of mass: ( meters )
+	X = 0.0080400
+	Y = 0.0000000
+	Z = 0.0004100
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 1.0000000,  0.0000000,  0.0000000)   	Px = 0.0000000
+	 Iy = ( 0.0000000,  1.0000000,  0.0000000)   	Py = 0.0000000
+	 Iz = ( 0.0000000,  0.0000000,  1.0000000)   	Pz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000000	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000000	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000000
+
+ring_distal
+Mass properties of ring_distal
+     Configuration: Default
+     Coordinate system: Coordinate System2
+
+Density = 2810.0000610 kilograms per cubic meter
+
+Mass = 0.0003743 kilograms
+
+Volume = 0.0000001 cubic meters
+
+Surface area = 0.0004030 square meters
+
+Center of mass: ( meters )
+	X = 0.0111021
+	Y = -0.0033985
+	Z = 0.0004100
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.9914145, -0.1307563,  0.0000000)   	Px = 0.0000000
+	 Iy = ( 0.1307563,  0.9914145,  0.0000000)   	Py = 0.0000000
+	 Iz = ( 0.0000000,  0.0000000,  1.0000000)   	Pz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system.
+	Lxx = 0.0000000	Lxy = 0.0000000	Lxz = 0.0000000
+	Lyx = 0.0000000	Lyy = 0.0000000	Lyz = 0.0000000
+	Lzx = 0.0000000	Lzy = 0.0000000	Lzz = 0.0000000
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system.
+	Ixx = 0.0000000	Ixy = 0.0000000	Ixz = 0.0000000
+	Iyx = 0.0000000	Iyy = 0.0000001	Iyz = 0.0000000
+	Izx = 0.0000000	Izy = 0.0000000	Izz = 0.0000001
